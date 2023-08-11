@@ -1,0 +1,116 @@
+@use './variables';
+
+body{
+    background-color: variables.$background;
+    color: variables.$white;
+
+    .gray-text{
+        color: variables.$gray;
+    }
+    
+    .title{
+        text-shadow: variables.$neonWhite;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .pageBody{
+        padding: 0px 32px;   
+    }
+
+    .contactCards{
+        padding: 0px !important;
+        margin-left: 2rem;
+        
+        div{
+            rotate: 5deg;
+            box-shadow: 4px 4px 50px 0px rgba(255, 255, 255, 0.25);
+            transition: transform .5s;
+        }
+
+        div:hover{
+            transform: scale(1.5);
+            rotate: 0deg;
+        }
+
+        .two, .four{
+            margin-left: -8rem;
+        }
+        .three, .four{
+            margin-top: -1rem;
+        }
+        .five{
+            justify-self: right;
+            margin-right: -3rem;
+            margin-top: -18rem;
+        }
+    }
+
+    // .projectImg{
+    //     background-image: url('../assets/ncbn/header.jpg');
+    //     background-repeat: repeat;
+    //     background-size: cover;
+    // }
+
+    // Projects
+    .video-background {
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+      }
+      
+      .video-background video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .content {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 30px 60px;
+      }
+      
+
+    @media screen and (min-width: 1024px) {
+        .pageBody {padding: 120px 64px};
+
+        .contactCards{
+            .two, .four{
+                margin-left: -5rem;
+            }
+            .three, .four{
+                margin-top: -6rem;
+            }
+            .five{
+                justify-self: right;
+                margin-right: 1rem;
+                margin-top: -34rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1240px) {
+        .contactCards{
+            .two, .four{
+                margin-left: -7rem;
+            }
+            .three, .four{
+                margin-top: -5.5rem;
+            }
+            .five{
+                justify-self: right;
+                margin-right: 3rem;
+                margin-top: -30rem;
+            }
+        }
+    }
+}
+
