@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './pages/index';
 import Contact from './pages/contact';
+import Courses from './pages/courses';
 import Expertise from './pages/expertise';
 import About from './pages/about';
 import Professional from './pages/professional';
@@ -23,6 +24,7 @@ function App() {
             <Route exact path='/expertise' element={<Expertise/>} />
             <Route exact path='/professional_projects/:id' element={<Professional/>} />
             <Route exact path='/passion_projects/:id' element={<Passion/>} />
+            <Route exact path='/courses' element={<Courses />} />
             <Route exact path='/contact' element={<Contact />} />
             <Route exact path='#' element={<Error404 />} />
         </Routes>
